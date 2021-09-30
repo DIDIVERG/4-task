@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+</head>
+<body class="m-0" style="background:crimson">
+<header>
+    <div class="container-sm d-flex-inline"  >
+        <div class="row">
+            <div class="col" style="height: 116px">
+            <img src="img/image.png" alt="" class="rounded float-start p-2 " id="logo">
+            </div>
+            <div class="col-6 d-flex flex-row justify-content-end align-items-center">
+                Название Сайта
+            </div>
+    </div>
+    </div>
+</header>
+
+<nav>
+<div class="container-sm d-flex-inline mt-4 " >
+    <ul class="nav justify-content-between align-items-center d-flex flex-column flex-sm-row h-100" style="height: 170px">
+        <li class="nav-item">
+            <a class="nav-link" href="https://vk.com">Ссылка на вконтакте</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link active"  href="https://www.youtube.com">Ссылка на ютуб</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link active" href="https://www.google.com.com" >Ссылка на гугл</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="https://www.twitch.tv">Ссылка на твич</a>
+        </li>
+
+    </ul>
+</div>
+</nav>
+
+<main>
+    <div class="wrapper"> </div>
+    <div class="container-sm d-flex-inline" style="background: none">
+        <div class="row d-flex flex-column">
+            <div class="col" id="list">
+<ol class ="list">
+    <li ><a href="http://example.com">first</a></li>
+    <li ><a href="https://example.com">second</a></li>
+    <li ><a href="ftp://test.com/img/picture1">third</a></li>
+    <li ><a href="ftp://login:pass@test.com:21/img/picture">fourth</a></li>
+    <li ><a href="http://example.com/inedx.html#anchor">fifth</a></li>
+    <li ><a href="#anchor">sixth</a></li>
+    <li ><a href="http://example.com?product=phole&color=gold">seventh</a></li>
+    <li >  <ol >
+        <li> <a href="http://exmaple.com" title ="main page" >  eighth </a> </li>
+    </ol>
+    </li>
+    <li ><a> ninth</a></li>
+    <li ><a href="#">tenth</a></li>
+    <li ><a rel="nofollow" href="">eleventh</a></li>
+    <li ><a href="" rel="noindex"> </a>12-th</li>
+    <li >
+        <p>random <a href="#">link</a> 13-th </p>
+    </li>
+    <li ><a href=""><img src="img/picture.jpg" alt="picture" ></a></li>
+    <li >
+        <map name="Name">
+            <area alt="picture" shape="rect" coords="0,0,100,100" href="#">
+            <area alt="picture" shape="circle" coords="200,200,100" href="#">
+        </map>
+        <img usemap="#Name" src="img/1111.jpg" alt="picture">
+    </li>
+    <li ><a href="./page.html">16-th</a></li>
+    <li ><a href="/about/page.html">17-th</a></li>
+    <li ><a href="../page.html">18-th</a></li>
+    <li ><a href="../../page.html">19-th</a></li>
+    <li ><a href="/index.html">20-th</a></li>
+    <li><a href="/pages/page.html">21-th</a></li>
+</ol>
+            </div>
+            <div class="col">
+                <form action="URL">
+                    <div>
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="user_name">
+
+                        <label for="mail">E-mail:</label>
+                        <input type="email" id="mail" name="user_mail">
+
+                        <label for="date">Birthday: </label>
+                        <input type="date" id="date" name="date"/>
+                    </div>
+
+                    <div>
+                        <input type="radio" id="op1"
+                               name="contact" value="male">
+                        <label for="op1">Male</label>
+                        <input type="radio" id="op2"
+                               name="contact" value="female">
+                        <label for="op2">Female</label>
+                    </div>
+
+                    <div>
+                        <input type="radio" id="op21"
+                               name="limbs" value="1">
+                        <label for="op21">One limb</label>
+                        <input type="radio" id="op22"
+                               name="limbs" value="2">
+                        <label for="op22">Two limbs</label>
+                        <input type="radio" id="op23"
+                               name="limbs" value="3">
+                        <label for="op23">Three limbs</label>
+                        <input type="radio" id="op24"
+                               name="limbs" value="4">
+                        <label for="op24">Four limbs</label>
+                    </div>
+
+                    <label>
+                        Your SuperPowers:<br/>
+                        <select name="field-name-4[]" multiple="multiple">
+                            <option value="value1">immortal</option>
+                            <option value="value2">disembodied</option>
+                            <option value="value3">levitation</option>
+                        </select>
+                    </label>
+
+                    <p><b> Биография </b></p>
+                    <p><textarea name="bioraphy" placeholder="Биография"> </textarea></p>
+
+                    <input type="checkbox" id="contractID" name="contract" value="contract" required>
+                    <label for="contractID">I have read the contract</label>
+
+                    <input type="submit" value="submit">
+                </form>
+            </div>
+            <div class="col" id="table">
+<table border="1" class ="table" id="block-1" >
+    <tr>
+        <th > Имя </th>
+        <th> Фамилия</th>
+        <th> Отчество</th>
+
+    </tr>
+
+    <tr class="odd">
+        <td colspan="2"> Илья Фенько</td>
+        <!--<td> Фенько</td> -->
+        <td> Олегович </td>
+    </tr>
+
+    <tr >
+        <td colspan="2"> Андрей Михайлович</td>
+        <td> Соколов </td>
+        <!-- <td> Михайлович </td> -->
+    </tr>
+
+    <tr class="odd">
+        <td colspan="2" > Ольга Фенько </td>
+        <!-- <td> Фенько </td> -->
+        <td> Олеговна </td>
+    </tr>
+
+</table>
+            </div>
+    </div>
+    </div>
+    </div>
+</main>
+<footer>
+    <div class="container-sm d-flex-inline "  style="background: none" >
+        <div class="row d-flex-inline">
+        <div class="col d-flex justify-content-center">
+            ПОДВАЛ
+        </div>
+        </div>
+    </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous">
+</script>
+</body>
+</html>
